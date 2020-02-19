@@ -1,6 +1,7 @@
 {
     "name": "vscode-ice",
     "displayName": "Ice-Lang",
+    "publisher": "Mu001999",
     "description": "For ice programming language",
     "version": "0.0.1",
     "engines": {
