@@ -1,0 +1,25 @@
+{
+    "name": "vscode-ice",
+    "displayName": "Ice-Lang",
+    "description": "For ice programming language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ice",
+            "aliases": ["Ice-Lang", "ice"],
+            "extensions": [".ice"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ice",
+            "scopeName": "source.ice",
+            "path": "./syntaxes/ice.tmLanguage.json"
+        }]
+    }
+}
