@@ -3,18 +3,42 @@
 	"name": "Ice-Lang",
 	"patterns": [
 		{
+			"include": "#comment"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#expression"
+		},
+		{
+			"include": "#declaration"
 		}
 	],
 	"repository": {
+		"comment": {
+			"name": "comment.line.ice",
+			"begin": "#",
+			"end": "\n"
+		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.ice",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.ice",
+					"match": "\\b(if|elif|else|while|do|for|to|foreach|as|break|continue|return|match)\\b"
+				},
+				{
+					"name": "keyword.operator.ice",
+					"match": "\\b(and|or|not)\\b"
+				},
+				{
+					"name": "keyword.operator.ice",
+					"match": "\\:|\\+|-|\\*|/|%|\\&|\\||\\^|~|<|>|!|=|!|<|>|\\?"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.ice",
@@ -24,6 +48,41 @@
 				{
 					"name": "constant.character.escape.ice",
 					"match": "\\\\."
+				}
+			]
+		},
+		"expression": {
+			"patterns": [
+				{
+					"name": "constant.numeric.ice",
+					"match": "\\b[0-9]+(\\.[0-9]*)?"
+				},
+				{
+					"name": "entity.name.function.ice",
+					"match": "\\b[a-zA-Z_][a-zA-Z_0-9]*\\b"
+				}
+			]
+		},
+		"declaration": {
+			"begin": "@",
+			"end": ":|{|,",
+			"beginCaptures": {
+				"0": {"name": "keyword.other.unit.ice"}
+			},
+			"patterns": [
+				{
+					"begin": "\\(",
+					"end": "\\)",
+					"beginCaptures": {
+						"0": {"name": "entity.name.function.ice"}
+					},
+					"endCaptures": {
+						"0": {"name": "entity.name.function.ice"}
+					}
+				},
+				{
+					"name": "entity.name.function.function.ice",
+					"match": "[a-zA-Z_][a-zA-Z_0-9]*"
 				}
 			]
 		}
