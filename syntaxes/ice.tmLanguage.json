@@ -28,11 +28,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ice",
-					"match": "\\b(if|elif|else|while|do|for|to|foreach|as|break|continue|return|match)\\b"
+					"match": "\\b(if|elif|else|while|do|for|to|foreach|as|break|continue|return)\\b"
 				},
 				{
 					"name": "keyword.operator.ice",
-					"match": "\\b(and|or|not)\\b"
+					"match": "\\b(and|or|not|new|delay|match)\\b"
 				},
 				{
 					"name": "keyword.operator.ice",
