@@ -2,8 +2,12 @@
 
 All notable changes to the "vscode-ice" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [Released]
 
-## [Unreleased]
+### 0.0.2
 
-- Initial release
+- Add all keywords.
+
+### 0.0.1
+
+- Support most keywords and declaration.
