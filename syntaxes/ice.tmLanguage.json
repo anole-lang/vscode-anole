@@ -65,7 +65,7 @@
 		},
 		"declaration": {
 			"begin": "@",
-			"end": ":|{|,",
+			"end": ":|{|,|;",
 			"beginCaptures": {
 				"0": {"name": "keyword.other.unit.ice"}
 			},

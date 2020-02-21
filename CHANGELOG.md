@@ -2,7 +2,11 @@
 
 All notable changes to the "vscode-ice" extension will be documented in this file.
 
-## [Released]
+## [Unreleased]
+
+### 0.0.3
+
+- Fix bug in `@var;`.
 
 ### 0.0.2
 
