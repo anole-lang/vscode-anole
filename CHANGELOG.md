@@ -4,6 +4,10 @@ All notable changes to the "vscode-ice" extension will be documented in this fil
 
 ## [Unreleased]
 
+### 0.0.4
+
+- Support new keyword `is`
+
 ### 0.0.3
 
 - Fix bug in `@var;`.

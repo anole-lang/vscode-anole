@@ -32,7 +32,7 @@
 				},
 				{
 					"name": "keyword.operator.ice",
-					"match": "\\b(and|or|not|new|delay|match)\\b"
+					"match": "\\b(and|or|not|is|new|delay|match)\\b"
 				},
 				{
 					"name": "keyword.operator.ice",
