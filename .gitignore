@@ -35,5 +35,5 @@
 .vscode-test/**
 vsc-extension-quickstart.md
 
-*.ice
+*.icec
 *.vsix

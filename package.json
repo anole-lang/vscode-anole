@@ -2,8 +2,8 @@
     "name": "vscode-ice",
     "displayName": "Ice-Lang",
     "publisher": "Mu001999",
-    "description": "For ice programming language",
-    "version": "0.0.4",
+    "description": "For Ice Programming Language",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -14,12 +14,12 @@
         "languages": [{
             "id": "ice",
             "aliases": ["Ice-Lang", "ice"],
-            "extensions": [".ice"],
+            "extensions": [".icec"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "ice",
-            "scopeName": "source.ice",
+            "scopeName": "source.icec",
             "path": "./syntaxes/ice.tmLanguage.json"
         }]
     }

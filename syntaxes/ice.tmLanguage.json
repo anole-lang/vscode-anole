@@ -20,33 +20,33 @@
 	],
 	"repository": {
 		"comment": {
-			"name": "comment.line.ice",
+			"name": "comment.line.icec",
 			"begin": "#",
 			"end": "\n"
 		},
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.ice",
+					"name": "keyword.control.icec",
 					"match": "\\b(if|elif|else|while|do|for|to|foreach|as|break|continue|return)\\b"
 				},
 				{
-					"name": "keyword.operator.ice",
+					"name": "keyword.operator.icec",
 					"match": "\\b(and|or|not|is|new|delay|match)\\b"
 				},
 				{
-					"name": "keyword.operator.ice",
+					"name": "keyword.operator.icec",
 					"match": "\\:|\\+|-|\\*|/|%|\\&|\\||\\^|~|<|>|!|=|!|<|>|\\?"
 				}
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.ice",
+			"name": "string.quoted.double.icec",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.ice",
+					"name": "constant.character.escape.icec",
 					"match": "\\\\."
 				}
 			]
@@ -54,11 +54,11 @@
 		"expression": {
 			"patterns": [
 				{
-					"name": "constant.numeric.ice",
+					"name": "constant.numeric.icec",
 					"match": "\\b[0-9]+(\\.[0-9]*)?"
 				},
 				{
-					"name": "entity.name.function.ice",
+					"name": "entity.name.function.icec",
 					"match": "\\b[a-zA-Z_][a-zA-Z_0-9]*\\b"
 				}
 			]
@@ -67,25 +67,26 @@
 			"begin": "@",
 			"end": ":|{|,|;",
 			"beginCaptures": {
-				"0": {"name": "keyword.other.unit.ice"}
+				"0": {"name": "keyword.other.unit.icec"}
 			},
 			"patterns": [
 				{
 					"begin": "\\(",
 					"end": "\\)",
 					"beginCaptures": {
-						"0": {"name": "entity.name.function.ice"}
+						"0": {"name": "entity.name.function.icec"}
 					},
 					"endCaptures": {
-						"0": {"name": "entity.name.function.ice"}
-					}
-				},
-				{
-					"name": "entity.name.function.function.ice",
-					"match": "[a-zA-Z_][a-zA-Z_0-9]*"
+						"0": {"name": "entity.name.function.icec"}
+					},
+					"patterns": [
+						{
+							"include": "#declaration"
+						}
+					]
 				}
 			]
 		}
 	},
-	"scopeName": "source.ice"
+	"scopeName": "source.icec"
 }
