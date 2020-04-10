@@ -28,11 +28,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.icec",
-					"match": "\\b(if|elif|else|while|do|for|to|foreach|as|break|continue|return)\\b"
+					"match": "\\b(if|elif|else|while|do|for|to|foreach|as|break|continue|return|use|from)\\b"
 				},
 				{
 					"name": "keyword.operator.icec",
-					"match": "\\b(and|or|not|is|new|delay|match)\\b"
+					"match": "\\b(and|or|not|is|new|delay|match|enum)\\b"
 				},
 				{
 					"name": "keyword.operator.icec",
