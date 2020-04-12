@@ -3,7 +3,7 @@
     "displayName": "Ice-Lang",
     "publisher": "Mu001999",
     "description": "For Ice Programming Language",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "engines": {
         "vscode": "^1.42.0"
     },
