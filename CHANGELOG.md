@@ -2,6 +2,14 @@
 
 All notable changes to the "vscode-ice" extension will be documented in this file.
 
+## 0.0.7
+
+- Regular update
+
+## 0.0.6
+
+- Regular update
+
 ## 0.0.5
 
 - Support default arguments
