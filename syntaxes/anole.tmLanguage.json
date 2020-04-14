@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Ice-Lang",
+	"name": "Anole-Lang",
 	"patterns": [
 		{
 			"include": "#comment"
@@ -20,33 +20,33 @@
 	],
 	"repository": {
 		"comment": {
-			"name": "comment.line.icec",
+			"name": "comment.line.anole",
 			"begin": "#",
 			"end": "\n"
 		},
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.icec",
+					"name": "keyword.control.anole",
 					"match": "\\b(if|elif|else|while|do|foreach|as|break|continue|return|use|from)\\b"
 				},
 				{
-					"name": "keyword.operator.icec",
+					"name": "keyword.operator.anole",
 					"match": "\\b(and|or|not|is|new|delay|match|enum)\\b"
 				},
 				{
-					"name": "keyword.operator.icec",
+					"name": "keyword.operator.anole",
 					"match": "\\:|\\+|-|\\*|/|%|\\&|\\||\\^|~|<|>|!|=|!|<|>|\\?"
 				}
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.icec",
+			"name": "string.quoted.double.anole",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.icec",
+					"name": "constant.character.escape.anole",
 					"match": "\\\\."
 				}
 			]
@@ -54,11 +54,11 @@
 		"expression": {
 			"patterns": [
 				{
-					"name": "constant.numeric.icec",
+					"name": "constant.numeric.anole",
 					"match": "\\b[0-9]+(\\.[0-9]*)?"
 				},
 				{
-					"name": "entity.name.function.icec",
+					"name": "entity.name.function.anole",
 					"match": "\\b[a-zA-Z_][a-zA-Z_0-9]*\\b"
 				}
 			]
@@ -67,17 +67,17 @@
 			"begin": "@",
 			"end": ":|{|,|;",
 			"beginCaptures": {
-				"0": {"name": "keyword.other.unit.icec"}
+				"0": {"name": "keyword.other.unit.anole"}
 			},
 			"patterns": [
 				{
 					"begin": "\\(",
 					"end": "\\)",
 					"beginCaptures": {
-						"0": {"name": "entity.name.function.icec"}
+						"0": {"name": "entity.name.function.anole"}
 					},
 					"endCaptures": {
-						"0": {"name": "entity.name.function.icec"}
+						"0": {"name": "entity.name.function.anole"}
 					},
 					"patterns": [
 						{
@@ -88,5 +88,5 @@
 			]
 		}
 	},
-	"scopeName": "source.icec"
+	"scopeName": "source.anole"
 }

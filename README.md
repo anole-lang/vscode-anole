@@ -1,8 +1,29 @@
-# Vscode-Ice README
+# Vscode-Anole README
 
-This is the README for the extension "vscode-ice".
+This is the README for the extension "vscode-anole".
 
 ## Release Notes
+
+### 0.0.9
+
+- Update id
+
+### 0.0.8
+
+- Rename to Anole
+
+### 0.0.7
+
+- Regular update
+
+### 0.0.6
+
+- Regular update
+
+### 0.0.5
+
+- Support default arguments
+- Change suffix from .anole to .anole
 
 ### 0.0.4
 

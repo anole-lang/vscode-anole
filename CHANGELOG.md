@@ -1,6 +1,14 @@
 # Change Log
 
-All notable changes to the "vscode-ice" extension will be documented in this file.
+All notable changes to the "vscode-anole" extension will be documented in this file.
+
+## 0.0.9
+
+- Update id
+
+## 0.0.8
+
+- Rename to Anole
 
 ## 0.0.7
 
@@ -13,7 +21,7 @@ All notable changes to the "vscode-ice" extension will be documented in this fil
 ## 0.0.5
 
 - Support default arguments
-- Change suffix from .ice to .icec
+- Change suffix from .anole to .anole
 
 ## 0.0.4
 

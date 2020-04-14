@@ -1,9 +1,9 @@
 {
-    "name": "vscode-ice",
-    "displayName": "Ice-Lang",
+    "name": "vscode-anole",
+    "displayName": "Anole-Lang",
     "publisher": "Mu001999",
-    "description": "For Ice Programming Language",
-    "version": "0.0.7",
+    "description": "For Anole Programming Language",
+    "version": "0.0.9",
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -12,15 +12,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "ice",
-            "aliases": ["Ice-Lang", "ice"],
-            "extensions": [".icec"],
+            "id": "anole",
+            "aliases": ["Anole-Lang", "anole"],
+            "extensions": [".anole"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "ice",
-            "scopeName": "source.icec",
-            "path": "./syntaxes/ice.tmLanguage.json"
+            "language": "anole",
+            "scopeName": "source.anole",
+            "path": "./syntaxes/anole.tmLanguage.json"
         }]
     }
 }
