@@ -3,7 +3,7 @@
     "displayName": "Anole-Lang",
     "publisher": "Mu001999",
     "description": "For Anole Programming Language",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -11,16 +11,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "anole",
-            "aliases": ["Anole-Lang", "anole"],
-            "extensions": [".anole"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "anole",
-            "scopeName": "source.anole",
-            "path": "./syntaxes/anole.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "anole",
+                "aliases": [
+                    "Anole-Lang",
+                    "anole"
+                ],
+                "extensions": [
+                    ".anole"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "anole",
+                "scopeName": "source.anole",
+                "path": "./syntaxes/anole.tmLanguage.json"
+            }
+        ]
     }
 }
