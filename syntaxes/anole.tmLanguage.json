@@ -3,7 +3,10 @@
 	"name": "Anole-Lang",
 	"patterns": [
 		{
-			"include": "#comment"
+			"include": "#lineComment"
+		},
+		{
+			"include": "#blockComment"
 		},
 		{
 			"include": "#keywords"
@@ -19,10 +22,15 @@
 		}
 	],
 	"repository": {
-		"comment": {
+		"lineComment": {
 			"name": "comment.line.anole",
 			"begin": "#",
 			"end": "\n"
+		},
+		"blockComment": {
+			"name": "comment.line.anole",
+			"begin": "\\$",
+			"end": "\\$"
 		},
 		"keywords": {
 			"patterns": [

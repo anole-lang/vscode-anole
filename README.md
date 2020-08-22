@@ -4,6 +4,10 @@ This is the README for the extension "vscode-anole".
 
 ## Release Notes
 
+### 0.0.11
+
+- Support block comment
+
 ### 0.0.10
 
 - Update to fit new syntax like `@var1, ..., varn: foo()`
