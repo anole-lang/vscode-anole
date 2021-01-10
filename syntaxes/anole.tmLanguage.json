@@ -6,9 +6,6 @@
 			"include": "#lineComment"
 		},
 		{
-			"include": "#blockComment"
-		},
-		{
 			"include": "#keywords"
 		},
 		{
@@ -24,27 +21,22 @@
 	"repository": {
 		"lineComment": {
 			"name": "comment.line.anole",
-			"begin": "#",
+			"begin": "//",
 			"end": "\n"
-		},
-		"blockComment": {
-			"name": "comment.line.anole",
-			"begin": "\\$",
-			"end": "\\$"
 		},
 		"keywords": {
 			"patterns": [
 				{
 					"name": "keyword.control.anole",
-					"match": "\\b(if|elif|else|while|do|foreach|as|break|continue|return|use|from)\\b"
+					"match": "\\b(if|elif|else|while|do|foreach|as|break|continue|return|use|from|prefixop|infixop)\\b"
 				},
 				{
 					"name": "keyword.operator.anole",
-					"match": "\\b(and|or|not|is|new|delay|match|enum)\\b"
+					"match": "\\b(and|or|not|is|delay|match|dict|enum|class)\\b"
 				},
 				{
 					"name": "keyword.operator.anole",
-					"match": "\\:|\\+|-|\\*|/|%|\\&|\\||\\^|~|<|>|!|=|!|<|>|\\?"
+					"match": "\\.|,|\\:|\\+|-|\\*|/|%|\\&|\\||\\^|~|<|>|!|=|!|<|>|\\?"
 				}
 			]
 		},
