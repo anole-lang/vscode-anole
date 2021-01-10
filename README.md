@@ -4,6 +4,10 @@ This is the README for the extension "vscode-anole".
 
 ## Release Notes
 
+### 0.0.12
+
+- Update to fit the lastest Anole
+
 ### 0.0.11
 
 - Support block comment

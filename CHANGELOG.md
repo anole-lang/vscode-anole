@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-anole" extension will be documented in this file.
 
+### 0.0.12
+
+- Update to fit the lastest Anole
+
 ### 0.0.11
 
 - Support block comment
